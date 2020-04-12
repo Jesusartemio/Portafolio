@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Blog Jesus</title>
-    </head>
-    <body>
-        <header>Cabecera de mi pagina de inicio</header>
+<html lang="es">
 
-        <footer>Pie de pagina</footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title> Blog Jesus</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <figure class="logo">
+                <img src="./images/logo.png" height="50px" alt="Logo de https://controldigital.com">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Trabajemos Juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Jesus Mamani</strong> <br> programador <strong>Full Satck </strong> <br>en
+                <strong>Automatizacion</strong>
+            </h1>
+            <img class="hero_image" src="./images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+        </div>
+        <!--            -->
+    </section>
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project_title">Videos Control Digital</h3>
+                    <h6 class="project_course">React Native / React</h6>
+                    <p class="project_date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                    <p class="project_url"><small><strong>Puedes verlo en:</strong> www.controldigital.io</small></p>
+                    <p class="project_description">Proyecto basado en la automatizacion de la planta de tratamiento de agua
+                        acida</p>
+                </div>
+                <figure class="project_imageContainer">
+                    <img class="project_image" src="./images/platzi-video-react-native.png" width="500"
+                        alt="Proyecto del curso React Native">
+                </figure>
+            </article>
+        </div>
+    </section>
+    <div class="container">
+        <h2 class="event_list_title">Mas sobre mi experiencia</h2>
+    </div>
+   
+    <section id="eventos" class="event_list">
+        <div class="container">
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="./images/platzi-conf.jpg" width="500" height="300"
+                        alt="Imagen de conferencia">
+                </figure>
+                <div class="event_detail"> 
+                    <h3 class="event_title">RSTech Lima 2015</h3>
+                    <p class="event_description">EL evento mas grande de Lima</p>
+                    <a class="event_url" href="https://www.youtube.com" target="_blank">Ver platica</a>                
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="./images/platzi-conf.jpg" width="500" height="300"
+                        alt="Imagen de conferencia">
+                </figure>
+                <div class="event_detail"> 
+                    <h3 class="event_title">RSTech Lima 2015</h3>
+                    <p class="event_description">EL evento mas grande de Lima</p>
+                    <a class="event_url" href="https://www.youtube.com" target="_blank">Ver platica</a>                
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="./images/platzi-conf.jpg" width="500" height="300"
+                        alt="Imagen de conferencia">
+                </figure>
+                <div class="event_detail"> 
+                    <h3 class="event_title">RSTech Lima 2015</h3>
+                    <p class="event_description">EL evento mas grande de Lima</p>
+                    <a class="event_url" href="https://www.youtube.com" target="_blank">Ver platica</a>                
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form action="/suscripcion/" class="form_email">
+                <input type="text" placeholder="Dejanos tu email" value="@gmail.com">
+                <input type="Submit" value="Texto del boton">
+                <button>
+                    Enviar
+                </button>
+    
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Cursos de Desarrollo Web Online <img src="./images/platzi.png" width="80px" alt="Platzi"></p>
+            </div>
+            <div>
+                Designed by Artemio17
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
